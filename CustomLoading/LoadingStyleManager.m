@@ -17,8 +17,16 @@ static LoadingStyleManager *managerInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         managerInstance = [[self alloc] init];
+        [managerInstance defaultStyle];
     });
     return managerInstance;
+}
+
+//hud的默认样式
+- (void)defaultStyle{
+    
+    self.hudStyle = gray_background_style;
+    self.hudDelayTime = 2.0;
 }
 
 @end
