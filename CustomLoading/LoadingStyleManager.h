@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, CustomHudStyle) {
 @interface LoadingStyleManager : NSObject
 
 @property(nonatomic, assign) CustomHudStyle hudStyle;
-@property(nonatomic, assign) NSTimeInterval hudDelayTime;
+@property(nonatomic, assign) NSTimeInterval hudShowTime;
 
 +(instancetype)sharedInstance;
 

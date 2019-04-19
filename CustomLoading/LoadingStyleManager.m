@@ -26,7 +26,7 @@ static LoadingStyleManager *managerInstance = nil;
 - (void)defaultStyle{
     
     self.hudStyle = gray_background_style;
-    self.hudDelayTime = 2.0;
+    self.hudShowTime = 2.0;
 }
 
 @end

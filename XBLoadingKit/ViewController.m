@@ -32,6 +32,7 @@ static NSString *const kCellIdentifier = @"UITableViewCell";
     // Do any additional setup after loading the view.
     
 //    [[LoadingStyleManager sharedInstance] setHudStyle:dim_background_style]; //此处打开就是一个黑色背景的提示
+    [[LoadingStyleManager sharedInstance] setHudShowTime:1.5]; //设置提示显示的时长
     [self.view addSubview:self.tableview];
     [self.tableview reloadData];
 }

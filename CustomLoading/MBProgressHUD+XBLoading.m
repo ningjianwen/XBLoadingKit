@@ -84,17 +84,17 @@ dispatch_async(queue, block);\
 
 + (void)showError:(NSString *)error toView:(UIView *)view {
     
-    [self show:error icon:@"error" view:view delay:[LoadingStyleManager sharedInstance].hudDelayTime];
+    [self show:error icon:@"error" view:view delay:[LoadingStyleManager sharedInstance].hudShowTime];
 }
 
 + (void)showSuccess:(NSString *)success toView:(UIView *)view {
     
-    [self show:success icon:@"success" view:view delay:[LoadingStyleManager sharedInstance].hudDelayTime];
+    [self show:success icon:@"success" view:view delay:[LoadingStyleManager sharedInstance].hudShowTime];
 }
 
 + (void)showWarning:(NSString *)warning toView:(UIView *)view {
     
-    [self show:warning icon:@"warning" view:view delay:[LoadingStyleManager sharedInstance].hudDelayTime];
+    [self show:warning icon:@"warning" view:view delay:[LoadingStyleManager sharedInstance].hudShowTime];
 }
 
 #pragma mark - 显示loading状态
