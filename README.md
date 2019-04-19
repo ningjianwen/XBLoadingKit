@@ -81,7 +81,9 @@ typedef NS_ENUM(NSInteger, CustomHudStyle) {
 ```objective-c
 [[LoadingStyleManager sharedInstance] setHudDelayTime:1.5]; //设置提示显示的时长
 ```
+
 效果展示：
+
 ![效果图](https://upload-images.jianshu.io/upload_images/767049-64dc941b85f0ce63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
